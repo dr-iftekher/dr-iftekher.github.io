@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+<rect width="1600" height="900" fill="#071021"/>
+<g fill="none" stroke="#C9A84C">
+<rect x="1080" y="120" width="560" height="315" rx="10" stroke-opacity=".22" stroke-width="2"/>
+<rect x="1160" y="200" width="560" height="315" rx="10" stroke-opacity=".14" stroke-width="1.5"/>
+<rect x="1240" y="280" width="560" height="315" rx="10" stroke-opacity=".08" stroke-width="1"/>
+</g>
+<path d="M 1330 240 L 1330 316 L 1396 278 Z" fill="#B91C1C" fill-opacity=".75"/>
+<g stroke="#C9A84C" stroke-opacity=".12">
+<line x1="0" y1="760" x2="1600" y2="760" stroke-width="1"/>
+<line x1="0" y1="800" x2="1600" y2="800" stroke-width="1"/>
+</g>
+<g fill="#C9A84C" fill-opacity=".16">
+<rect x="60" y="772" width="30" height="16" rx="3"/><rect x="130" y="772" width="30" height="16" rx="3"/>
+<rect x="200" y="772" width="30" height="16" rx="3"/><rect x="270" y="772" width="30" height="16" rx="3"/>
+<rect x="340" y="772" width="30" height="16" rx="3"/><rect x="410" y="772" width="30" height="16" rx="3"/>
+</g>
+</svg>

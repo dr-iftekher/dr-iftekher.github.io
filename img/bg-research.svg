@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+<rect width="1600" height="900" fill="#071021"/>
+<defs>
+<pattern id="dots" width="46" height="46" patternUnits="userSpaceOnUse">
+<circle cx="2" cy="2" r="1.6" fill="#C9A84C" fill-opacity=".18"/>
+</pattern>
+</defs>
+<rect x="820" y="0" width="780" height="900" fill="url(#dots)"/>
+<g stroke="#C9A84C">
+<line x1="880" y1="0" x2="880" y2="900" stroke-opacity=".25" stroke-width="1.5"/>
+<line x1="0" y1="700" x2="1600" y2="700" stroke-opacity=".14" stroke-width="1"/>
+<line x1="0" y1="748" x2="1600" y2="748" stroke-opacity=".10" stroke-width="1"/>
+<line x1="0" y1="796" x2="1240" y2="796" stroke-opacity=".08" stroke-width="1"/>
+</g>
+<rect x="0" y="694" width="220" height="4" fill="#B91C1C" fill-opacity=".7"/>
+</svg>

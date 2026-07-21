@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+<rect width="1600" height="900" fill="#071021"/>
+<g stroke="#C9A84C" stroke-opacity=".09" stroke-width="1">
+<line x1="200" y1="0" x2="200" y2="900"/><line x1="480" y1="0" x2="480" y2="900"/>
+<line x1="760" y1="0" x2="760" y2="900"/><line x1="1040" y1="0" x2="1040" y2="900"/>
+<line x1="1320" y1="0" x2="1320" y2="900"/>
+<line x1="0" y1="180" x2="1600" y2="180"/><line x1="0" y1="420" x2="1600" y2="420"/>
+<line x1="0" y1="660" x2="1600" y2="660"/>
+</g>
+<path d="M 200 660 C 500 600 900 480 1320 180" fill="none" stroke="#C9A84C" stroke-opacity=".22" stroke-width="2" stroke-dasharray="2 10" stroke-linecap="round"/>
+<g fill="#C9A84C" fill-opacity=".85">
+<path d="M 1320 140 c -20 0 -34 15 -34 34 c 0 24 34 56 34 56 c 0 0 34 -32 34 -56 c 0 -19 -14 -34 -34 -34 z"/>
+<circle cx="1320" cy="174" r="12" fill="#071021"/>
+</g>
+<g fill="#B91C1C" fill-opacity=".85">
+<path d="M 200 620 c -20 0 -34 15 -34 34 c 0 24 34 56 34 56 c 0 0 34 -32 34 -56 c 0 -19 -14 -34 -34 -34 z"/>
+<circle cx="200" cy="654" r="12" fill="#071021"/>
+</g>
+</svg>
