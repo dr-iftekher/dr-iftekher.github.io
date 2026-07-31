@@ -8,8 +8,13 @@
      HOW TO EDIT: look for comments marked  EDIT HERE  below.
      Change only the text between tags; never delete the tags.
      Brand colours live in css/style.css (:root section).
-     Background photos: add img/hero-<page>.jpg to replace the
-     branded pattern on any page's header automatically.
+
+     BILINGUAL STRUCTURE
+       page.html      = English
+       page-bn.html   = Bangla (বাংলা)
+     The two are independent files. When you change a fact in one
+     (a phone number, a new award), change it in BOTH so the
+     versions stay consistent.
      ============================================================ -->
 <title>Research & Publications | Dr. Md Iftekher Iqbal</title>
 <meta name="description" content="Peer-reviewed publications, research directions and peer-review service of Dr. Md Iftekher Iqbal — glaucoma and MIGS researcher, Bangladesh.">
@@ -17,6 +22,9 @@
 <meta property="og:title" content="Research & Publications | Dr. Md Iftekher Iqbal">
 <meta property="og:description" content="Peer-reviewed publications, research directions and peer-review service of Dr. Md Iftekher Iqbal — glaucoma and MIGS researcher, Bangladesh.">
 <meta property="og:type" content="profile">
+<link rel="alternate" hreflang="en" href="https://driftekheriqbal.com/research.html">
+<link rel="alternate" hreflang="bn" href="https://driftekheriqbal.com/research-bn.html">
+<link rel="alternate" hreflang="x-default" href="https://driftekheriqbal.com/research.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Albert+Sans:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -27,20 +35,25 @@
 <nav class="nav" aria-label="Main navigation">
   <div class="nav-inner">
     <a class="nav-name" href="index.html">Dr. Md Iftekher <span>Iqbal</span></a>
-    <button class="nav-toggle" aria-label="Open menu" onclick="document.getElementById('navlinks').classList.toggle('open')">&#9776;</button>
     <ul class="nav-links" id="navlinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="innovations.html">Innovations</a></li>
-      <li><a href="research.html" class="active">Research</a></li>
-      <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="innovations.html">Innovations</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
       <li><a href="appointments.html" class="nav-cta">Book Appointment</a></li>
     </ul>
+    <div class="nav-actions">
+      <!-- LANGUAGE TOGGLE — links this page to its twin in the other language -->
+      <div class="lang-switch" role="group" aria-label="Language">
+        <a href="research.html" class="active" lang="en">EN</a>
+        <a href="research-bn.html" lang="bn">বাংলা</a>
+      </div>
+      <button class="nav-toggle" aria-label="Open menu" onclick="document.getElementById('navlinks').classList.toggle('open')">&#9776;</button>
+    </div>
   </div>
 </nav>
 
-<!-- ================= PAGE HEADER ================= -->
-<!-- To use a real photograph here, add img/hero-research.jpg -->
 <header class="hero hero--page hero--research">
   <div class="wrap">
     <p class="eyebrow">Research</p>
@@ -49,87 +62,110 @@
   </div>
 </header>
 
-<!-- ================= PUBLICATIONS ================= -->
 <!-- EDIT HERE: PUBLICATIONS — add each new paper to the TOP of this list.
-     Copy one <li>...</li> block, paste it first, change title, link, journal -->
+     Copy one <li>...</li> block, paste it first, then change the title,
+     the link, and the details line (journal · publisher · type · year).
+     Remember to mirror the change in research-bn.html -->
 <section class="section section--cream">
   <div class="wrap">
     <p class="eyebrow eyebrow--red">Publications</p>
     <h2>Peer-Reviewed Work</h2>
     <ul class="pub-list">
-      <li><a href="https://journals.lww.com/jcro/fulltext/2026/01000/prethreaded_needle_assisted_scleral_fixation_of_a.29.aspx" target="_blank" rel="noopener">Prethreaded Needle&ndash;Assisted Scleral Fixation of a Modified Capsular Tension Ring for Severe Zonular Deficiency</a><em>JCRO &middot; 2026</em></li>
-      <li><a href="https://pubmed.ncbi.nlm.nih.gov/42256912/" target="_blank" rel="noopener">Electric Cataract After High-Voltage Craniofacial Injury With Preserved Optic Nerve Microvasculature: A Case Report</a><em>Indexed Case Report</em></li>
-      <li><a href="https://pubmed.ncbi.nlm.nih.gov/42158796/" target="_blank" rel="noopener">Sinskey Hook&ndash;Guided Mechanical Peeling of Primary Posterior Capsular Plaque During Cataract Surgery</a><em>Technique Report</em></li>
-      <li><a href="https://onlinelibrary.wiley.com/doi/10.1002/ccr3.70970" target="_blank" rel="noopener">Post-Trabeculectomy Refractory Shallow Anterior Chamber: A Case Highlighting Overlooked Patient Behavior</a><em>Clinical Case Reports &middot; Wiley</em></li>
-      <li><a href="https://doi.org/10.1155/bmri/4125584" target="_blank" rel="noopener">Midterm Outcomes of a Bangladeshi Modification of Bent Ab Interno Needle Goniectomy (B-BANG): Single-Surgeon Pilot Study</a><em>BioMed Research International &middot; 2025</em></li>
-      <li><a href="https://pubmed.ncbi.nlm.nih.gov/40385828/" target="_blank" rel="noopener">Tube Flow Shunt: An Innovative and Cost-Effective Approach to the Modified Bleb-Forming Filtration Technique</a><em>Technique Report</em></li>
-      <li><a href="https://pubmed.ncbi.nlm.nih.gov/40388784/" target="_blank" rel="noopener">Neurocutaneous Features of Tuberous Sclerosis Complex: A Case Report from Bangladesh</a><em>Medicine</em></li>
-      <li><a href="https://pubmed.ncbi.nlm.nih.gov/40134996/" target="_blank" rel="noopener">A Landmark Case of Childhood Glaucoma Care in Bangladesh: Gonioscopy-Assisted Transluminal Trabeculotomy in Primary Congenital Glaucoma</a><em>Indexed Case Report</em></li>
-      <li><a href="https://pubmed.ncbi.nlm.nih.gov/38910641" target="_blank" rel="noopener">Advancing Glaucoma Care in Bangladesh With Minimally Invasive Glaucoma Surgery</a><em>Cureus &middot; 2024</em></li>
-      <li><a href="https://pubmed.ncbi.nlm.nih.gov/38313936" target="_blank" rel="noopener">Red-Free (Green) Filter-Enhanced Gonioscopy with Smartphone: A Pilot Study</a><em>Pilot Study</em></li>
-      <li><a href="https://pubmed.ncbi.nlm.nih.gov/37096247" target="_blank" rel="noopener">Bangladeshi Case Series of Bardet-Biedl Syndrome</a><em>Case Series</em></li>
-      <li><a href="https://f1000research.com/articles/12-1003/v2" target="_blank" rel="noopener">Orbital Cellulitis with Panophthalmitis During Pregnancy: A Rare Case in Bangladesh</a><em>F1000Research</em></li>
-      <li><a href="https://doi.org/10.54646/bijcroo.2023.22" target="_blank" rel="noopener">Panophthalmitis After Aurolab Aqueous Drainage Implant (AADI) in Refractory Glaucoma with Vogt-Koyanagi-Harada Syndrome: A Case Report</a><em>2023</em></li>
-      <li><a href="https://doi.org/10.54646/bijcroo.2022.21" target="_blank" rel="noopener">Efficacy of Autologous Blood Clot in Primary Pterygium Surgery Compared With Suture Technique in a Tertiary Hospital of Bangladesh</a><em>2022</em></li>
-      <li><a href="https://seriesscience.com/glaucoma/" target="_blank" rel="noopener">Uniocular Primary Open Angle Glaucoma: An Unusual Case Report from Bangladesh</a><em>Case Report</em></li>
+
+      <li><a href="https://journals.lww.com/jcro/fulltext/2026/01000/prethreaded_needle_assisted_scleral_fixation_of_a.29.aspx" target="_blank" rel="noopener">Prethreaded Needle&ndash;Assisted Scleral Fixation of a Modified Capsular Tension Ring for Severe Zonular Deficiency</a>
+        <em><span class="pub-type">Technique Article</span>Journal of Cataract &amp; Refractive Surgery Online Case Reports (JCRO) &middot; Wolters Kluwer &middot; 2026</em></li>
+
+      <li><a href="https://doi.org/10.1002/ccr3.72882" target="_blank" rel="noopener">Electric Cataract After High-Voltage Craniofacial Injury With Preserved Optic Nerve Microvasculature</a>
+        <em><span class="pub-type">Case Report</span>Clinical Case Reports (Clin Case Rep) &middot; Wiley &middot; 2026</em></li>
+
+      <li><a href="https://doi.org/10.7759/cureus.107205" target="_blank" rel="noopener">Sinskey Hook&ndash;Guided Mechanical Peeling of Primary Posterior Capsular Plaque During Cataract Surgery</a>
+        <em><span class="pub-type">Technique Article</span>Cureus &middot; Springer Nature &middot; 2026</em></li>
+
+      <li><a href="https://doi.org/10.1002/ccr3.70970" target="_blank" rel="noopener">Post-Trabeculectomy Refractory Shallow Anterior Chamber: A Case Highlighting Overlooked Patient Behavior</a>
+        <em><span class="pub-type">Case Report</span>Clinical Case Reports (Clin Case Rep) &middot; Wiley &middot; 2025</em></li>
+
+      <li><a href="https://doi.org/10.1155/bmri/4125584" target="_blank" rel="noopener">Midterm Outcomes of a Bangladeshi Modification of Bent Ab Interno Needle Goniectomy (B-BANG): Single-Surgeon Pilot Study</a>
+        <em><span class="pub-type">Research Article</span>BioMed Research International (Biomed Res Int) &middot; Wiley &middot; 2025</em></li>
+
+      <li><a href="https://doi.org/10.7759/cureus.82399" target="_blank" rel="noopener">Tube Flow Shunt: An Innovative and Cost-Effective Approach to the Modified Bleb-Forming Filtration Technique</a>
+        <em><span class="pub-type">Technique Article</span>Cureus &middot; Springer Nature &middot; 2025</em></li>
+
+      <li><a href="https://doi.org/10.1097/MD.0000000000042534" target="_blank" rel="noopener">Neurocutaneous Features of Tuberous Sclerosis Complex: A Case Report from Bangladesh</a>
+        <em><span class="pub-type">Case Report</span>Medicine (Medicine, Baltimore) &middot; Wolters Kluwer &middot; 2025</em></li>
+
+      <li><a href="https://doi.org/10.7759/cureus.79492" target="_blank" rel="noopener">A Landmark Case of Childhood Glaucoma Care in Bangladesh: Gonioscopy-Assisted Transluminal Trabeculotomy in Primary Congenital Glaucoma</a>
+        <em><span class="pub-type">Case Report</span>Cureus &middot; Springer Nature &middot; 2025</em></li>
+
+      <li><a href="https://doi.org/10.7759/cureus.60905" target="_blank" rel="noopener">Advancing Glaucoma Care in Bangladesh With Minimally Invasive Glaucoma Surgery</a>
+        <em><span class="pub-type">Case Report</span>Cureus &middot; Springer Nature &middot; 2024</em></li>
+
+      <li><a href="https://doi.org/10.7759/cureus.51559" target="_blank" rel="noopener">Red-Free (Green) Filter-Enhanced Gonioscopy with Smartphone: A Pilot Study</a>
+        <em><span class="pub-type">Research Article</span>Cureus &middot; Springer Nature &middot; 2024</em></li>
+
+      <li><a href="https://doi.org/10.1155/2023/4017010" target="_blank" rel="noopener">Bangladeshi Case Series of Bardet-Biedl Syndrome</a>
+        <em><span class="pub-type">Case Series</span>Case Reports in Ophthalmological Medicine (Case Rep Ophthalmol Med) &middot; Wiley &middot; 2023</em></li>
+
+      <li><a href="https://f1000research.com/articles/12-1003/v2" target="_blank" rel="noopener">Orbital Cellulitis with Panophthalmitis During Pregnancy: A Rare Case in Bangladesh</a>
+        <em><span class="pub-type">Case Report</span>F1000Research &middot; Taylor &amp; Francis &middot; 2023</em></li>
+
+      <li><a href="https://doi.org/10.54646/bijcroo.2023.22" target="_blank" rel="noopener">Panophthalmitis After Aurolab Aqueous Drainage Implant (AADI) in Refractory Glaucoma with Vogt-Koyanagi-Harada Syndrome</a>
+        <em><span class="pub-type">Case Report</span>BAS International Journal of Clinical Research in Ophthalmology and Optometry (BIJCROO) &middot; 2023</em></li>
+
+      <li><a href="https://doi.org/10.54646/bijcroo.2022.21" target="_blank" rel="noopener">Efficacy of Autologous Blood Clot in Primary Pterygium Surgery Compared With Suture Technique in a Tertiary Hospital of Bangladesh</a>
+        <em><span class="pub-type">Research Article</span>BAS International Journal of Clinical Research in Ophthalmology and Optometry (BIJCROO) &middot; 2022</em></li>
+
+      <li><a href="https://seriesscience.com/glaucoma/" target="_blank" rel="noopener">Uniocular Primary Open Angle Glaucoma: An Unusual Case Report from Bangladesh</a>
+        <em><span class="pub-type">Case Report</span>Series Journal of Ophthalmology &middot; Series Science &middot; 2022</em></li>
+
     </ul>
     <div class="profiles">
       <a class="btn btn--navy" href="https://orcid.org/0000-0003-3501-6187" target="_blank" rel="noopener">ORCID</a>
       <a class="btn btn--navy" href="https://www.researchgate.net/profile/Md-Iftekher-Iqbal" target="_blank" rel="noopener">ResearchGate</a>
       <a class="btn btn--navy" href="https://scholar.google.com/citations?user=cHionpIAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
       <a class="btn btn--navy" href="https://www.webofscience.com/wos/author/record/AAH-5555-2019" target="_blank" rel="noopener">Web of Science</a>
+      <a class="btn btn--navy" href="https://pubmed.ncbi.nlm.nih.gov/?term=Iqbal+Md+Iftekher" target="_blank" rel="noopener">PubMed</a>
     </div>
   </div>
 </section>
 
-<!-- ================= RESEARCH DIRECTIONS ================= -->
-<!-- EDIT HERE: ACTIVE RESEARCH AREAS -->
 <section class="section section--navy">
   <div class="wrap">
     <p class="eyebrow">Directions</p>
     <h2>Active Research Areas</h2>
     <div class="card-grid">
-      <div class="card">
-        <h3>MIGS Outcomes in Bangladeshi Eyes</h3>
-        <p>Building the local evidence base — long-term outcomes of angle surgery and modified techniques in a South Asian population.</p>
-      </div>
-      <div class="card">
-        <h3>Cost-Effective Surgical Innovation</h3>
-        <p>Techniques and devices engineered for affordability without compromising safety — from tFlow to instrument-minimal methods.</p>
-      </div>
-      <div class="card">
-        <h3>Smartphone Ophthalmic Imaging</h3>
-        <p>Standardized smartphone workflows for surgical video, slit-lamp, and gonioscopy documentation of publication quality.</p>
-      </div>
-      <div class="card">
-        <h3>AI-Integrated Ophthalmology</h3>
-        <p>Exploring how artificial intelligence can support research, education, and clinical decision-making in eye care.</p>
-      </div>
+      <div class="card"><h3>MIGS Outcomes in Bangladeshi Eyes</h3><p>Building the local evidence base — long-term outcomes of angle surgery and modified techniques in a South Asian population.</p></div>
+      <div class="card"><h3>Cost-Effective Surgical Innovation</h3><p>Techniques and devices engineered for affordability without compromising safety — from tFlow to instrument-minimal methods.</p></div>
+      <div class="card"><h3>Smartphone Ophthalmic Imaging</h3><p>Standardized smartphone workflows for surgical video, slit-lamp, and gonioscopy documentation of publication quality.</p></div>
+      <div class="card"><h3>AI-Integrated Ophthalmology</h3><p>Exploring how artificial intelligence can support research, education, and clinical decision-making in eye care.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ================= PEER REVIEW ================= -->
 <section class="section section--deep">
   <div class="wrap">
     <p class="eyebrow">Peer Review</p>
     <h2>Serving the Literature</h2>
-    <p class="lede">A verified peer reviewer for indexed journals, conducting systematic reviews from title through references under COPE ethical guidelines.</p>
+    <p class="lede">A regular reviewer for indexed journals, conducting systematic reviews from title through references under COPE ethical guidelines.</p>
     <div class="card-grid">
-      <div class="card"><h3>European Journal of Ophthalmology</h3><p>SAGE Publishing</p></div>
-      <div class="card"><h3>Cureus</h3><p>Springer Nature &middot; Laureate Certificate recipient</p></div>
+      <div class="card"><h3>European Journal of Ophthalmology (EJO)</h3><p>SAGE Publishing</p></div>
+      <div class="card"><h3>Journal of Glaucoma</h3><p>Wolters Kluwer</p></div>
+      <div class="card"><h3>Clinical Ophthalmology</h3><p>Dove Medical Press &middot; Taylor &amp; Francis</p></div>
+      <div class="card"><h3>Critical Public Health</h3><p>Taylor &amp; Francis</p></div>
       <div class="card"><h3>Clinical Case Reports</h3><p>Wiley</p></div>
+      <div class="card"><h3>Cureus</h3><p>Springer Nature &middot; Laureate Certificate recipient</p></div>
+      <div class="card"><h3>Journal of International Medical Research</h3><p>SAGE Publishing</p></div>
+      <div class="card"><h3>And others</h3><p>Including the Digital Journal of Ophthalmology and the BSMMU Journal.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ================= FOOTER (same on every page) ================= -->
+<!-- ================= FOOTER ================= -->
 <footer>
   <div class="wrap">
     <div class="foot-grid">
       <div>
         <p class="foot-name">Dr. Md Iftekher <span>Iqbal</span></p>
-        <p class="foot-tag">Glaucoma, Cataract &amp; Complex Anterior Segment Surgeon &middot; MIGS Pioneer of Bangladesh</p>
+        <p class="foot-tag">Assistant Professor of Ophthalmology, Ispahani Islamia Eye Institute and Hospital &middot; Consultant &mdash; Glaucoma, Cataract &amp; Complex Anterior Segment Surgery &middot; MIGS Pioneer of Bangladesh</p>
         <p class="foot-line">A surgeon heals one eye. An innovator works on the system around it.</p>
       </div>
       <div>
@@ -150,6 +186,7 @@
           <li><a href="https://www.researchgate.net/profile/Md-Iftekher-Iqbal" target="_blank" rel="noopener">ResearchGate</a></li>
           <li><a href="https://scholar.google.com/citations?user=cHionpIAAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
           <li><a href="https://www.webofscience.com/wos/author/record/AAH-5555-2019" target="_blank" rel="noopener">Web of Science</a></li>
+          <li><a href="https://www.cureus.com/users/389675-md-iftekher-iqbal" target="_blank" rel="noopener">Cureus Profile</a></li>
         </ul>
       </div>
     </div>

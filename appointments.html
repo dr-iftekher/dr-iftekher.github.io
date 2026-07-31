@@ -8,15 +8,23 @@
      HOW TO EDIT: look for comments marked  EDIT HERE  below.
      Change only the text between tags; never delete the tags.
      Brand colours live in css/style.css (:root section).
-     Background photos: add img/hero-<page>.jpg to replace the
-     branded pattern on any page's header automatically.
+
+     BILINGUAL STRUCTURE
+       page.html      = English
+       page-bn.html   = Bangla (বাংলা)
+     The two are independent files. When you change a fact in one
+     (a phone number, a new award), change it in BOTH so the
+     versions stay consistent.
      ============================================================ -->
 <title>Appointments | Dr. Md Iftekher Iqbal — Bangladesh Eye Hospital, Uttara & Mirpur</title>
-<meta name="description" content="Book an appointment with Dr. Md Iftekher Iqbal at Bangladesh Eye Hospital, Uttara and Mirpur branches, Dhaka. Chamber days, hours and phone numbers.">
+<meta name="description" content="Book an appointment with Dr. Md Iftekher Iqbal at Bangladesh Eye Hospital, Uttara and Mirpur branches, Dhaka.">
 <meta name="author" content="Dr. Md Iftekher Iqbal">
 <meta property="og:title" content="Appointments | Dr. Md Iftekher Iqbal — Bangladesh Eye Hospital, Uttara & Mirpur">
-<meta property="og:description" content="Book an appointment with Dr. Md Iftekher Iqbal at Bangladesh Eye Hospital, Uttara and Mirpur branches, Dhaka. Chamber days, hours and phone numbers.">
+<meta property="og:description" content="Book an appointment with Dr. Md Iftekher Iqbal at Bangladesh Eye Hospital, Uttara and Mirpur branches, Dhaka.">
 <meta property="og:type" content="profile">
+<link rel="alternate" hreflang="en" href="https://driftekheriqbal.com/appointments.html">
+<link rel="alternate" hreflang="bn" href="https://driftekheriqbal.com/appointments-bn.html">
+<link rel="alternate" hreflang="x-default" href="https://driftekheriqbal.com/appointments.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Albert+Sans:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -27,20 +35,25 @@
 <nav class="nav" aria-label="Main navigation">
   <div class="nav-inner">
     <a class="nav-name" href="index.html">Dr. Md Iftekher <span>Iqbal</span></a>
-    <button class="nav-toggle" aria-label="Open menu" onclick="document.getElementById('navlinks').classList.toggle('open')">&#9776;</button>
     <ul class="nav-links" id="navlinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="innovations.html">Innovations</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="innovations.html">Innovations</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
       <li><a href="appointments.html" class="nav-cta">Book Appointment</a></li>
     </ul>
+    <div class="nav-actions">
+      <!-- LANGUAGE TOGGLE — links this page to its twin in the other language -->
+      <div class="lang-switch" role="group" aria-label="Language">
+        <a href="appointments.html" class="active" lang="en">EN</a>
+        <a href="appointments-bn.html" lang="bn">বাংলা</a>
+      </div>
+      <button class="nav-toggle" aria-label="Open menu" onclick="document.getElementById('navlinks').classList.toggle('open')">&#9776;</button>
+    </div>
   </div>
 </nav>
 
-<!-- ================= PAGE HEADER ================= -->
-<!-- To use a real photograph here, add img/hero-appointments.jpg -->
 <header class="hero hero--page hero--appointments">
   <div class="wrap">
     <p class="eyebrow">Consultation</p>
@@ -49,8 +62,7 @@
   </div>
 </header>
 
-<!-- ================= CHAMBERS ================= -->
-<!-- EDIT HERE: CHAMBER DETAILS — days, times, phone numbers -->
+<!-- EDIT HERE: CHAMBER DETAILS — mirror any change in appointments-bn.html -->
 <section class="section section--cream">
   <div class="wrap">
     <p class="eyebrow eyebrow--red">Where to Find Me</p>
@@ -61,7 +73,6 @@
         <p class="chamber-addr">House 27, Sonargaon Janapath Road, Sector 07, Uttara, Dhaka-1230</p>
         <dl>
           <dt>Days &amp; Hours</dt>
-          <dd class="bn">শনি, সোম, বুধ — সন্ধ্যা ৭টা থেকে রাত ৯টা</dd>
           <dd>Saturday, Monday, Wednesday — 7:00 PM to 9:00 PM</dd>
           <dt>Appointment</dt>
           <dd><a href="tel:+8801787665944">+880 1787-665944</a> &nbsp;&middot;&nbsp; <a href="tel:028933041">02-8933041</a></dd>
@@ -72,13 +83,11 @@
           <a href="https://g.page/r/CTqYRYOWEkDGEBI/review" target="_blank" rel="noopener">Google Review</a>
         </div>
       </article>
-
       <article class="chamber">
         <h3>Bangladesh Eye Hospital — Mirpur Branch</h3>
         <p class="chamber-addr">Sumi Tower, 66 Zoo Road, Mirpur-2, Dhaka-1216</p>
         <dl>
           <dt>Days &amp; Hours</dt>
-          <dd class="bn">রবি, মঙ্গল — সন্ধ্যা ৬টা থেকে রাত ৯টা</dd>
           <dd>Sunday, Tuesday — 6:00 PM to 9:00 PM</dd>
           <dt>Appointment</dt>
           <dd><a href="tel:+8801847422010">+880 1847-422010</a> &nbsp;&middot;&nbsp; <a href="tel:0244800060">02-44800060</a> &nbsp;&middot;&nbsp; <a href="tel:09610989798">09610-989798</a></dd>
@@ -94,29 +103,18 @@
   </div>
 </section>
 
-<!-- ================= WHAT TO EXPECT ================= -->
 <section class="section section--navy">
   <div class="wrap">
     <p class="eyebrow">For Patients</p>
     <h2>What to Bring to Your Visit</h2>
     <div class="card-grid">
-      <div class="card">
-        <h3>Previous Records</h3>
-        <p>All prior prescriptions, eye-drop bottles you currently use, visual field reports, OCT scans, and operative notes if you have had surgery before.</p>
-      </div>
-      <div class="card">
-        <h3>Time for Examination</h3>
-        <p>A thorough glaucoma evaluation may include pressure measurement, gonioscopy, and dilated examination — please allow adequate time for your visit.</p>
-      </div>
-      <div class="card">
-        <h3>Your Questions</h3>
-        <p>Write your questions down beforehand. An informed patient makes better decisions, and no question about your eyes is too small.</p>
-      </div>
+      <div class="card"><h3>Previous Records</h3><p>All prior prescriptions, eye-drop bottles you currently use, visual field reports, OCT scans, and operative notes if you have had surgery before.</p></div>
+      <div class="card"><h3>Time for Examination</h3><p>A thorough glaucoma evaluation may include pressure measurement, gonioscopy, and dilated examination — please allow adequate time for your visit.</p></div>
+      <div class="card"><h3>Your Questions</h3><p>Write your questions down beforehand. An informed patient makes better decisions, and no question about your eyes is too small.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ================= PATIENT VOICES ================= -->
 <section class="section section--deep">
   <div class="wrap">
     <p class="eyebrow">Patient Voices</p>
@@ -129,13 +127,13 @@
   </div>
 </section>
 
-<!-- ================= FOOTER (same on every page) ================= -->
+<!-- ================= FOOTER ================= -->
 <footer>
   <div class="wrap">
     <div class="foot-grid">
       <div>
         <p class="foot-name">Dr. Md Iftekher <span>Iqbal</span></p>
-        <p class="foot-tag">Glaucoma, Cataract &amp; Complex Anterior Segment Surgeon &middot; MIGS Pioneer of Bangladesh</p>
+        <p class="foot-tag">Assistant Professor of Ophthalmology, Ispahani Islamia Eye Institute and Hospital &middot; Consultant &mdash; Glaucoma, Cataract &amp; Complex Anterior Segment Surgery &middot; MIGS Pioneer of Bangladesh</p>
         <p class="foot-line">A surgeon heals one eye. An innovator works on the system around it.</p>
       </div>
       <div>
@@ -156,6 +154,7 @@
           <li><a href="https://www.researchgate.net/profile/Md-Iftekher-Iqbal" target="_blank" rel="noopener">ResearchGate</a></li>
           <li><a href="https://scholar.google.com/citations?user=cHionpIAAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
           <li><a href="https://www.webofscience.com/wos/author/record/AAH-5555-2019" target="_blank" rel="noopener">Web of Science</a></li>
+          <li><a href="https://www.cureus.com/users/389675-md-iftekher-iqbal" target="_blank" rel="noopener">Cureus Profile</a></li>
         </ul>
       </div>
     </div>

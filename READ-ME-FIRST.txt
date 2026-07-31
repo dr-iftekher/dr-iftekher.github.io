@@ -1,0 +1,35 @@
+BILINGUAL WEBSITE — ENGLISH + বাংলা   (complete)
+=================================================
+
+UPLOAD TO GITHUB
+  All 12 .html files -> main folder
+  css/style.css      -> into the existing css folder
+  Do NOT upload an img folder. Your photographs stay as they are.
+
+NOTHING IS LEFT TO FILL IN.
+
+THE TWO VIDEO SECTIONS DO DIFFERENT JOBS
+  HOME  (index.html / index-bn.html)
+    Plays the newest film from your playlist
+    "MIIQ - Featured Surgical Films" (PLQgYX9K4kgxk).
+    Fully automatic. Reorder the playlist on YouTube to change
+    which film leads. Never needs editing here.
+
+  TEACHING  (teaching.html / teaching-bn.html)
+    Four pinned films with captions:
+      9fthRKjS3cg  Phaco with Premium IOL
+      6bvu8sDHJk4  Pupilloplasty (Pupillary Cerclage) in
+                   Traumatic Mydriasis
+      5EQjrW-Sjlo  Broken IOL Haptic Management
+      D5-Yo6wkm-4  MIGS
+    To swap a film: replace the code after  embed/  with the code
+    from any YouTube link (the part after youtu.be/ or watch?v=),
+    and edit the <p> caption line beneath it.
+    Because these are fixed, check them if you ever make a film
+    private or delete it — a removed film shows an error box.
+
+KEEPING BOTH LANGUAGES IN STEP
+  page.html = English   |   page-bn.html = বাংলা
+  When a FACT changes (phone number, chamber hours, a new award,
+  a new publication, a swapped film), change it in BOTH files.
+  Every editable block is marked  EDIT HERE  in both languages.

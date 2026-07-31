@@ -8,15 +8,23 @@
      HOW TO EDIT: look for comments marked  EDIT HERE  below.
      Change only the text between tags; never delete the tags.
      Brand colours live in css/style.css (:root section).
-     Background photos: add img/hero-<page>.jpg to replace the
-     branded pattern on any page's header automatically.
+
+     BILINGUAL STRUCTURE
+       page.html      = English
+       page-bn.html   = Bangla (বাংলা)
+     The two are independent files. When you change a fact in one
+     (a phone number, a new award), change it in BOTH so the
+     versions stay consistent.
      ============================================================ -->
 <title>About | Dr. Md Iftekher Iqbal — MIGS Pioneer of Bangladesh</title>
-<meta name="description" content="Biography, credentials, honors and milestones of Dr. Md Iftekher Iqbal — glaucoma, cataract and complex anterior segment surgeon, Dhaka.">
+<meta name="description" content="Biography, credentials, honors and milestones of Dr. Md Iftekher Iqbal — Assistant Professor of Ophthalmology, Dhaka.">
 <meta name="author" content="Dr. Md Iftekher Iqbal">
 <meta property="og:title" content="About | Dr. Md Iftekher Iqbal — MIGS Pioneer of Bangladesh">
-<meta property="og:description" content="Biography, credentials, honors and milestones of Dr. Md Iftekher Iqbal — glaucoma, cataract and complex anterior segment surgeon, Dhaka.">
+<meta property="og:description" content="Biography, credentials, honors and milestones of Dr. Md Iftekher Iqbal — Assistant Professor of Ophthalmology, Dhaka.">
 <meta property="og:type" content="profile">
+<link rel="alternate" hreflang="en" href="https://driftekheriqbal.com/about.html">
+<link rel="alternate" hreflang="bn" href="https://driftekheriqbal.com/about-bn.html">
+<link rel="alternate" hreflang="x-default" href="https://driftekheriqbal.com/about.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Albert+Sans:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -27,29 +35,33 @@
 <nav class="nav" aria-label="Main navigation">
   <div class="nav-inner">
     <a class="nav-name" href="index.html">Dr. Md Iftekher <span>Iqbal</span></a>
-    <button class="nav-toggle" aria-label="Open menu" onclick="document.getElementById('navlinks').classList.toggle('open')">&#9776;</button>
     <ul class="nav-links" id="navlinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="innovations.html">Innovations</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="innovations.html">Innovations</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
       <li><a href="appointments.html" class="nav-cta">Book Appointment</a></li>
     </ul>
+    <div class="nav-actions">
+      <!-- LANGUAGE TOGGLE — links this page to its twin in the other language -->
+      <div class="lang-switch" role="group" aria-label="Language">
+        <a href="about.html" class="active" lang="en">EN</a>
+        <a href="about-bn.html" lang="bn">বাংলা</a>
+      </div>
+      <button class="nav-toggle" aria-label="Open menu" onclick="document.getElementById('navlinks').classList.toggle('open')">&#9776;</button>
+    </div>
   </div>
 </nav>
 
-<!-- ================= PAGE HEADER ================= -->
-<!-- To use a real photograph here, add img/hero-about.jpg -->
 <header class="hero hero--page hero--about">
   <div class="wrap">
     <p class="eyebrow">About</p>
     <h1>The Surgeon Behind <em>the System</em></h1>
-    <p class="hero-sub">Clinician, researcher, educator, and innovator — building modern glaucoma care in Bangladesh, one technique and one trainee at a time.</p>
+    <p class="hero-sub">Clinician, academic, researcher, educator, and innovator — building modern glaucoma care in Bangladesh, one technique and one trainee at a time.</p>
   </div>
 </header>
 
-<!-- ================= BIOGRAPHY ================= -->
 <!-- EDIT HERE: BIOGRAPHY TEXT -->
 <section class="section section--cream">
   <div class="wrap">
@@ -57,16 +69,19 @@
     <h2>Dr. Md Iftekher Iqbal, MBBS, MS</h2>
     <div class="about-grid">
       <div class="prose">
-        <p>Dr. Md Iftekher Iqbal is a Consultant Ophthalmologist specializing in <b>glaucoma, cataract, and complex anterior segment surgery</b>, practicing at Bangladesh Eye Hospital (Uttara and Mirpur branches) and Ispahani Islamia Eye Institute and Hospital, Dhaka.</p>
-        <p>He is internationally recognized as the <b>MIGS Pioneer of Bangladesh</b> — the first surgeon in the country to introduce TrabEx Pro, Gonioscopy-Assisted Transluminal Trabeculotomy (GATT), and Bent Ab Interno Goniectomy (BANG) — and the first Bangladeshi to publish MIGS cases in internationally indexed journals.</p>
-        <p>Beyond the operating room, he mentors residents and fellows, produces the MIIQ surgical teaching series, serves as invited faculty at national and international meetings including the <b>Asia-Pacific Glaucoma Congress</b>, and reviews for indexed journals. His work is grounded in a simple conviction: advanced surgery should be safe, reproducible, and accessible — not only in the world's best-equipped centers, but wherever patients need it.</p>
+        <p>Dr. Md Iftekher Iqbal is an <b>Assistant Professor of Ophthalmology at Ispahani Islamia Eye Institute and Hospital, Dhaka</b>, and a Consultant Ophthalmologist specializing in <b>glaucoma, cataract, and complex anterior segment surgery</b>, practising also at Bangladesh Eye Hospital (Uttara and Mirpur branches).</p>
+        <p>From the very beginning of his career he has worked with an <b>interventional glaucoma mindset</b> — the conviction that glaucoma should be addressed early and decisively, with procedural and surgical intervention brought forward rather than held in reserve after years of escalating drops. At a time when that philosophy was largely absent from practice in Bangladesh, he built his training, his research, and his surgical repertoire around it.</p>
+        <p>That commitment is what earned him international recognition as the <b>MIGS Pioneer of Bangladesh</b>. He was the first surgeon in the country to introduce TrabEx Pro, Gonioscopy-Assisted Transluminal Trabeculotomy (GATT), and Bent Ab Interno Goniectomy (BANG), and the first Bangladeshi to publish MIGS cases in internationally indexed journals — establishing minimally invasive glaucoma surgery as a viable standard of care in a resource-conscious health system.</p>
+        <p>He serves as invited faculty, invited speaker, and presenter at national and international meetings, including the Asia-Pacific Glaucoma Congress (APGC), the Asia-Pacific Academy of Ophthalmology (APAO) Congress, the European Society of Cataract and Refractive Surgeons (ESCRS) Congress, the European Society of Ophthalmology (SOE) Congress, the Asia-Pacific Vitreo-Retina Society (APVRS) Conference, the Nepal Ophthalmic Society Conference (NOSCON), and the Nepal Glaucoma Society (NGS) Conference, among many others.</p>
+        <p>He reviews on a regular basis for indexed journals including the <b>European Journal of Ophthalmology (EJO)</b>, the <b>Journal of Glaucoma</b>, <b>Clinical Ophthalmology</b>, <b>Critical Public Health</b>, <b>Clinical Case Reports</b>, <b>Cureus</b>, and the <b>Journal of International Medical Research</b>, among others. Alongside this, he mentors residents and fellows and produces the MIIQ surgical teaching series.</p>
       </div>
       <div>
         <ul class="cred-list">
           <li><b>MBBS</b><span>Ibrahim Medical College, Dhaka — 2010</span></li>
           <li><b>MS (Ophthalmology)</b><span>Bangabandhu Sheikh Mujib Medical University — 2019</span></li>
-          <li><b>Long-term Glaucoma Fellowship</b><span>Ispahani Islamia Eye Institute and Hospital, Dhaka</span></li>
-          <li><b>Consultant, Glaucoma</b><span>Bangladesh Eye Hospital (Uttara &amp; Mirpur) &middot; Ispahani Islamia Eye Institute and Hospital</span></li>
+          <li><b>Long-term Glaucoma Fellowship</b><span>Ispahani Islamia Eye Institute and Hospital, Dhaka — 2019</span></li>
+          <li><b>Assistant Professor of Ophthalmology</b><span>Ispahani Islamia Eye Institute and Hospital, Dhaka</span></li>
+          <li><b>Consultant, Glaucoma</b><span>Bangladesh Eye Hospital (Uttara &amp; Mirpur), Dhaka</span></li>
           <li><b>ORCID</b><span>0000-0003-3501-6187</span></li>
         </ul>
       </div>
@@ -74,43 +89,25 @@
   </div>
 </section>
 
-<!-- ================= RECOGNITION ================= -->
-<!-- EDIT HERE: AWARDS & MEMBERSHIPS -->
+<!-- EDIT HERE: AWARDS, ROLES & MEMBERSHIPS -->
 <section class="section section--navy">
   <div class="wrap">
     <p class="eyebrow">Recognition</p>
     <h2>Honors &amp; International Roles</h2>
     <div class="card-grid">
-      <div class="card">
-        <h3>APAO YO Rising Star 2024</h3>
-        <p>Named a Young Ophthalmologist Rising Star by the Asia-Pacific Academy of Ophthalmology.</p>
-      </div>
-      <div class="card">
-        <h3>APGS Young Glaucoma Expert</h3>
-        <p>Associate Board Member of the Asia-Pacific Glaucoma Society's Young Glaucoma Expert program.</p>
-      </div>
-      <div class="card">
-        <h3>European Glaucoma Society</h3>
-        <p>Extraordinary Member of the EGS, connecting Bangladeshi glaucoma care to the global community.</p>
-      </div>
-      <div class="card">
-        <h3>Invited Faculty, APGC 2026</h3>
-        <p>Invited faculty at the Asia-Pacific Glaucoma Congress, presenting original Bangladeshi surgical research.</p>
-      </div>
-      <div class="card">
-        <h3>Verified Peer Reviewer</h3>
-        <p>Reviewer for the European Journal of Ophthalmology, Cureus (Springer Nature), and Clinical Case Reports (Wiley); Cureus Laureate Certificate recipient.</p>
-      </div>
-      <div class="card">
-        <h3>International Media</h3>
-        <p>Featured by The Ophthalmologist, CAKE Magazine, the APGS, and national television including ATN News.</p>
-      </div>
+      <div class="card"><h3>APAO YO Rising Star 2024</h3><p>Named a Young Ophthalmologist Rising Star by the Asia-Pacific Academy of Ophthalmology.</p></div>
+      <div class="card"><h3>Invited Faculty &amp; Speaker</h3><p>Invited faculty, invited speaker and presenter at national and international meetings including APGC, APAO, ESCRS, SOE, APVRS, NOSCON and NGS, among many others.</p></div>
+      <div class="card"><h3>Travel Grants Recipient</h3><p>Recipient of international travel grants at APAO 2024 and APVRS 2024, supporting the presentation of Bangladeshi surgical research abroad.</p></div>
+      <div class="card"><h3>YO Nepal International Leader Award</h3><p>Recognized at NeYOCON 2026 for international leadership among young ophthalmologists.</p></div>
+      <div class="card"><h3>APGS Young Glaucoma Expert</h3><p>Associate Board Member of the Asia-Pacific Glaucoma Society's Young Glaucoma Expert program.</p></div>
+      <div class="card"><h3>European Glaucoma Society</h3><p>Extraordinary Member of the EGS, connecting Bangladeshi glaucoma care to the global community.</p></div>
+      <div class="card"><h3>Verified Peer Reviewer</h3><p>Regular reviewer for the European Journal of Ophthalmology, Journal of Glaucoma, Clinical Ophthalmology, Critical Public Health, Clinical Case Reports, Cureus, and the Journal of International Medical Research; Cureus Laureate Certificate recipient.</p></div>
+      <div class="card"><h3>International Media</h3><p>Featured by The Ophthalmologist, CAKE Magazine and MiceTV by Media MICE, and national television including ATN News.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ================= JOURNEY TIMELINE ================= -->
-<!-- EDIT HERE: TIMELINE — add new milestones to the bottom -->
+<!-- EDIT HERE: MILESTONES — add new entries at the bottom -->
 <section class="section section--deep">
   <div class="wrap">
     <p class="eyebrow">Journey</p>
@@ -118,22 +115,26 @@
     <ul class="timeline">
       <li><span class="year">2010</span><b>MBBS, Ibrahim Medical College</b><p>Foundation of a career devoted to ophthalmology.</p></li>
       <li><span class="year">2019</span><b>MS in Ophthalmology, BSMMU</b><p>Advanced surgical training at Bangladesh's premier medical university.</p></li>
-      <li><span class="year">&nbsp;</span><b>Long-term Glaucoma Fellowship</b><p>Subspecialty training at Ispahani Islamia Eye Institute and Hospital, Dhaka.</p></li>
-      <li><span class="year">&nbsp;</span><b>MIGS Firsts in Bangladesh</b><p>Introduced TrabEx Pro, GATT, and BANG to the country — including a landmark GATT in primary congenital glaucoma.</p></li>
-      <li><span class="year">2024</span><b>APAO YO Rising Star &middot; First Bangladeshi indexed MIGS publication</b><p>International recognition and presentations at APVRS Singapore.</p></li>
-      <li><span class="year">2025</span><b>B-BANG &amp; tFlow published</b><p>Original Bangladeshi techniques enter the international literature.</p></li>
-      <li><span class="year">2026</span><b>Invited Faculty, APGC</b><p>Presenting the B-BANG pilot study to the Asia-Pacific glaucoma community.</p></li>
+      <li><span class="year">2019</span><b>Long-term Glaucoma Fellowship</b><p>Subspecialty training at Ispahani Islamia Eye Institute and Hospital, Dhaka.</p></li>
+      <li><span class="year">2024</span><b>Red-Free Filter-Enhanced Gonioscopy &amp; the first MIGS in Bangladesh</b><p>An original low-cost diagnostic innovation published alongside the country's first minimally invasive glaucoma surgery.</p></li>
+      <li><span class="year">2024</span><b>APAO Young Ophthalmologist Rising Star</b><p>International recognition from the Asia-Pacific Academy of Ophthalmology.</p></li>
+      <li><span class="year">2024</span><b>International Travel Grants</b><p>Travel grant recipient at both APAO 2024 and APVRS 2024.</p></li>
+      <li><span class="year">2025</span><b>B-BANG and tFlow published</b><p>Two original Bangladeshi techniques enter the international literature.</p></li>
+      <li><span class="year">2025</span><b>Recognized as MIGS Pioneer of Bangladesh</b><p>The title conferred by international ophthalmic media.</p></li>
+      <li><span class="year">2025</span><b>International media presence</b><p>Featured alongside renowned glaucoma specialist Dr. Chelvin Sng of Singapore, and profiled in CAKE Magazine by Media MICE.</p></li>
+      <li><span class="year">2026</span><b>Two new named techniques published</b><p>Prethreaded Needle–Assisted mCTR Scleral Fixation, and Sinskey Hook–Guided Mechanical Peeling of Posterior Capsular Plaque.</p></li>
+      <li><span class="year">2026</span><b>YO Nepal International Leader Award</b><p>Presented at NeYOCON 2026.</p></li>
     </ul>
   </div>
 </section>
 
-<!-- ================= FOOTER (same on every page) ================= -->
+<!-- ================= FOOTER ================= -->
 <footer>
   <div class="wrap">
     <div class="foot-grid">
       <div>
         <p class="foot-name">Dr. Md Iftekher <span>Iqbal</span></p>
-        <p class="foot-tag">Glaucoma, Cataract &amp; Complex Anterior Segment Surgeon &middot; MIGS Pioneer of Bangladesh</p>
+        <p class="foot-tag">Assistant Professor of Ophthalmology, Ispahani Islamia Eye Institute and Hospital &middot; Consultant &mdash; Glaucoma, Cataract &amp; Complex Anterior Segment Surgery &middot; MIGS Pioneer of Bangladesh</p>
         <p class="foot-line">A surgeon heals one eye. An innovator works on the system around it.</p>
       </div>
       <div>
@@ -154,6 +155,7 @@
           <li><a href="https://www.researchgate.net/profile/Md-Iftekher-Iqbal" target="_blank" rel="noopener">ResearchGate</a></li>
           <li><a href="https://scholar.google.com/citations?user=cHionpIAAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
           <li><a href="https://www.webofscience.com/wos/author/record/AAH-5555-2019" target="_blank" rel="noopener">Web of Science</a></li>
+          <li><a href="https://www.cureus.com/users/389675-md-iftekher-iqbal" target="_blank" rel="noopener">Cureus Profile</a></li>
         </ul>
       </div>
     </div>

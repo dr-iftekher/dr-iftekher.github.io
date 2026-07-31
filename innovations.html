@@ -8,15 +8,23 @@
      HOW TO EDIT: look for comments marked  EDIT HERE  below.
      Change only the text between tags; never delete the tags.
      Brand colours live in css/style.css (:root section).
-     Background photos: add img/hero-<page>.jpg to replace the
-     branded pattern on any page's header automatically.
+
+     BILINGUAL STRUCTURE
+       page.html      = English
+       page-bn.html   = Bangla (বাংলা)
+     The two are independent files. When you change a fact in one
+     (a phone number, a new award), change it in BOTH so the
+     versions stay consistent.
      ============================================================ -->
 <title>Surgical Innovations | Dr. Md Iftekher Iqbal — B-BANG, tFlow & Named Techniques</title>
-<meta name="description" content="Named surgical techniques developed by Dr. Md Iftekher Iqbal: B-BANG, tFlow Tube Flow Shunt, Filter-Enhanced Gonioscopy, and national MIGS firsts in Bangladesh.">
+<meta name="description" content="Named surgical techniques developed by Dr. Md Iftekher Iqbal: B-BANG, tFlow, Filter-Enhanced Gonioscopy, and national MIGS firsts in Bangladesh.">
 <meta name="author" content="Dr. Md Iftekher Iqbal">
 <meta property="og:title" content="Surgical Innovations | Dr. Md Iftekher Iqbal — B-BANG, tFlow & Named Techniques">
-<meta property="og:description" content="Named surgical techniques developed by Dr. Md Iftekher Iqbal: B-BANG, tFlow Tube Flow Shunt, Filter-Enhanced Gonioscopy, and national MIGS firsts in Bangladesh.">
+<meta property="og:description" content="Named surgical techniques developed by Dr. Md Iftekher Iqbal: B-BANG, tFlow, Filter-Enhanced Gonioscopy, and national MIGS firsts in Bangladesh.">
 <meta property="og:type" content="profile">
+<link rel="alternate" hreflang="en" href="https://driftekheriqbal.com/innovations.html">
+<link rel="alternate" hreflang="bn" href="https://driftekheriqbal.com/innovations-bn.html">
+<link rel="alternate" hreflang="x-default" href="https://driftekheriqbal.com/innovations.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Albert+Sans:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -27,20 +35,25 @@
 <nav class="nav" aria-label="Main navigation">
   <div class="nav-inner">
     <a class="nav-name" href="index.html">Dr. Md Iftekher <span>Iqbal</span></a>
-    <button class="nav-toggle" aria-label="Open menu" onclick="document.getElementById('navlinks').classList.toggle('open')">&#9776;</button>
     <ul class="nav-links" id="navlinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="innovations.html" class="active">Innovations</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="innovations.html" class="active">Innovations</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
       <li><a href="appointments.html" class="nav-cta">Book Appointment</a></li>
     </ul>
+    <div class="nav-actions">
+      <!-- LANGUAGE TOGGLE — links this page to its twin in the other language -->
+      <div class="lang-switch" role="group" aria-label="Language">
+        <a href="innovations.html" class="active" lang="en">EN</a>
+        <a href="innovations-bn.html" lang="bn">বাংলা</a>
+      </div>
+      <button class="nav-toggle" aria-label="Open menu" onclick="document.getElementById('navlinks').classList.toggle('open')">&#9776;</button>
+    </div>
   </div>
 </nav>
 
-<!-- ================= PAGE HEADER ================= -->
-<!-- To use a real photograph here, add img/hero-innovations.jpg -->
 <header class="hero hero--page hero--innovations">
   <div class="wrap">
     <p class="eyebrow">Surgical Innovation</p>
@@ -49,7 +62,6 @@
   </div>
 </header>
 
-<!-- ================= PHILOSOPHY ================= -->
 <section class="section section--cream">
   <div class="wrap">
     <p class="eyebrow eyebrow--red">Philosophy</p>
@@ -58,8 +70,7 @@
   </div>
 </section>
 
-<!-- ================= NAMED TECHNIQUES ================= -->
-<!-- EDIT HERE: TECHNIQUES — add a new card by copying one card block -->
+<!-- EDIT HERE: TECHNIQUES -->
 <section class="section section--navy">
   <div class="wrap">
     <p class="eyebrow">Named Techniques</p>
@@ -67,18 +78,18 @@
     <div class="card-grid">
       <div class="card">
         <h3>B-BANG</h3>
-        <p>A Bangladeshi modification of Bent Ab Interno Goniectomy. Midterm single-surgeon pilot outcomes published in BioMed Research International (2025) and presented as an e-poster at APGC 2026.</p>
+        <p>A Bangladeshi modification of Bent Ab Interno Goniectomy. Midterm single-surgeon pilot outcomes published in BioMed Research International (Wiley, 2025) and presented at APGC.</p>
         <a class="more" href="https://doi.org/10.1155/bmri/4125584" target="_blank" rel="noopener">Read the Paper &rarr;</a>
       </div>
       <div class="card">
         <h3>tFlow — Tube Flow Shunt</h3>
-        <p>An innovative, cost-effective approach to the modified bleb-forming filtration technique — engineered for settings where commercial drainage devices are financially out of reach.</p>
-        <a class="more" href="https://pubmed.ncbi.nlm.nih.gov/40385828/" target="_blank" rel="noopener">Read the Paper &rarr;</a>
+        <p>An innovative, cost-effective approach to the modified bleb-forming filtration technique, using sterile trimmed silicone tubing — engineered for settings where commercial drainage devices are financially out of reach.</p>
+        <a class="more" href="https://doi.org/10.7759/cureus.82399" target="_blank" rel="noopener">Read the Paper &rarr;</a>
       </div>
       <div class="card">
         <h3>Filter-Enhanced Gonioscopy</h3>
-        <p>Red-free (green) filter-enhanced gonioscopy with a smartphone — a low-cost pilot-studied method to improve visualization of angle structures for diagnosis and MIGS planning.</p>
-        <a class="more" href="https://pubmed.ncbi.nlm.nih.gov/38313936" target="_blank" rel="noopener">Read the Paper &rarr;</a>
+        <p>Red-free (green) filter-enhanced gonioscopy with a smartphone — a low-cost, pilot-studied method that improves contrast and visualization of iridocorneal angle structures for diagnosis and MIGS planning.</p>
+        <a class="more" href="https://doi.org/10.7759/cureus.51559" target="_blank" rel="noopener">Read the Paper &rarr;</a>
       </div>
       <div class="card">
         <h3>Prethreaded Needle SFX of mCTR</h3>
@@ -87,11 +98,10 @@
       </div>
       <div class="card">
         <h3>Sinskey Hook PC Plaque Peel</h3>
-        <p>Sinskey hook&ndash;guided mechanical peeling of primary posterior capsular plaque during cataract surgery — a controlled, instrument-minimal solution to a common intraoperative surprise.</p>
-        <a class="more" href="https://pubmed.ncbi.nlm.nih.gov/42158796/" target="_blank" rel="noopener">Read the Paper &rarr;</a>
+        <p>Sinskey hook&ndash;guided mechanical peeling of primary posterior capsular plaque during cataract surgery — a controlled, instrument-efficient intraoperative solution that preserves the posterior capsule.</p>
+        <a class="more" href="https://doi.org/10.7759/cureus.107205" target="_blank" rel="noopener">Read the Paper &rarr;</a>
       </div>
     </div>
-
     <div class="callout">
       <b>National firsts</b>
       <p>First surgeon in Bangladesh to introduce TrabEx Pro, Gonioscopy-Assisted Transluminal Trabeculotomy (GATT), and Bent Ab Interno Goniectomy (BANG) — including a landmark GATT in primary congenital glaucoma, published as a first for childhood glaucoma care in the country.</p>
@@ -99,24 +109,14 @@
   </div>
 </section>
 
-<!-- ================= COMPLEX SURGERY ================= -->
 <section class="section section--deep">
   <div class="wrap">
     <p class="eyebrow">Complex Anterior Segment</p>
     <h2>When the Routine Case Isn't</h2>
     <div class="card-grid">
-      <div class="card">
-        <h3>Refractory &amp; Secondary Glaucoma</h3>
-        <p>Trabeculectomy with MMC, glaucoma drainage devices including Ahmed valve and AADI, and staged management of failed filtration.</p>
-      </div>
-      <div class="card">
-        <h3>Complicated Cataract</h3>
-        <p>Zonular deficiency, small pupil and iris repair including pupillary cerclage, posterior polar and hypermature cataract, premium IOL selection in compromised eyes.</p>
-      </div>
-      <div class="card">
-        <h3>Pediatric Glaucoma</h3>
-        <p>Angle surgery for congenital glaucoma, bringing MIGS-era approaches to the youngest patients in Bangladesh.</p>
-      </div>
+      <div class="card"><h3>Refractory &amp; Secondary Glaucoma</h3><p>Trabeculectomy with MMC, glaucoma drainage devices including Ahmed valve and AADI, and staged management of failed filtration.</p></div>
+      <div class="card"><h3>Complicated Cataract</h3><p>Zonular deficiency, small pupil and iris repair including pupillary cerclage, posterior polar and hypermature cataract, premium IOL selection in compromised eyes.</p></div>
+      <div class="card"><h3>Pediatric Glaucoma</h3><p>Angle surgery for congenital glaucoma, bringing MIGS-era approaches to the youngest patients in Bangladesh.</p></div>
     </div>
     <div class="cta-row" style="margin-top:34px">
       <a class="btn btn--ghost" href="teaching.html">See These Techniques on Film</a>
@@ -125,13 +125,13 @@
   </div>
 </section>
 
-<!-- ================= FOOTER (same on every page) ================= -->
+<!-- ================= FOOTER ================= -->
 <footer>
   <div class="wrap">
     <div class="foot-grid">
       <div>
         <p class="foot-name">Dr. Md Iftekher <span>Iqbal</span></p>
-        <p class="foot-tag">Glaucoma, Cataract &amp; Complex Anterior Segment Surgeon &middot; MIGS Pioneer of Bangladesh</p>
+        <p class="foot-tag">Assistant Professor of Ophthalmology, Ispahani Islamia Eye Institute and Hospital &middot; Consultant &mdash; Glaucoma, Cataract &amp; Complex Anterior Segment Surgery &middot; MIGS Pioneer of Bangladesh</p>
         <p class="foot-line">A surgeon heals one eye. An innovator works on the system around it.</p>
       </div>
       <div>
@@ -152,6 +152,7 @@
           <li><a href="https://www.researchgate.net/profile/Md-Iftekher-Iqbal" target="_blank" rel="noopener">ResearchGate</a></li>
           <li><a href="https://scholar.google.com/citations?user=cHionpIAAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
           <li><a href="https://www.webofscience.com/wos/author/record/AAH-5555-2019" target="_blank" rel="noopener">Web of Science</a></li>
+          <li><a href="https://www.cureus.com/users/389675-md-iftekher-iqbal" target="_blank" rel="noopener">Cureus Profile</a></li>
         </ul>
       </div>
     </div>
