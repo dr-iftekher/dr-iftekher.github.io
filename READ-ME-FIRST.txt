@@ -1,35 +1,39 @@
-BILINGUAL WEBSITE — ENGLISH + বাংলা   (complete)
-=================================================
+UPDATE — Areas of Expertise + arch portrait
+============================================
 
 UPLOAD TO GITHUB
   All 12 .html files -> main folder
   css/style.css      -> into the existing css folder
   Do NOT upload an img folder. Your photographs stay as they are.
 
-NOTHING IS LEFT TO FILL IN.
+NEW ON THE HOME PAGE
+  AREAS OF EXPERTISE — a bright white section placed directly
+  after the statistics strip, so a patient sees what you treat
+  before anything else. Six cards, each with an icon drawn in
+  code (no image files needed):
+     Glaucoma Diagnosis & Monitoring
+     Minimally Invasive Glaucoma Surgery
+     Filtration & Drainage Surgery
+     Cataract & Premium IOL Surgery
+     Complex Anterior Segment Surgery
+     Pediatric & Congenital Glaucoma
+  To edit a card, change its <h3> title and <p> text. Leave the
+  <svg> blocks alone unless you want a different symbol.
+  Mirror every change in index.html AND index-bn.html.
 
-THE TWO VIDEO SECTIONS DO DIFFERENT JOBS
-  HOME  (index.html / index-bn.html)
-    Plays the newest film from your playlist
-    "MIIQ - Featured Surgical Films" (PLQgYX9K4kgxk).
-    Fully automatic. Reorder the playlist on YouTube to change
-    which film leads. Never needs editing here.
+PORTRAIT REFRAMED
+  The circular cut-out is now an arch on a warm cream plate with
+  concentric gold outlines. Your existing photo.jpg works as is
+  — its light background blends into the plate.
+  The image is anchored to the TOP of the arch, so if your face
+  sits low in the frame, re-crop photo.jpg to 3:4 portrait
+  (e.g. 900 x 1200 px) with your eyes about one third down.
 
-  TEACHING  (teaching.html / teaching-bn.html)
-    Four pinned films with captions:
-      9fthRKjS3cg  Phaco with Premium IOL
-      6bvu8sDHJk4  Pupilloplasty (Pupillary Cerclage) in
-                   Traumatic Mydriasis
-      5EQjrW-Sjlo  Broken IOL Haptic Management
-      D5-Yo6wkm-4  MIGS
-    To swap a film: replace the code after  embed/  with the code
-    from any YouTube link (the part after youtu.be/ or watch?v=),
-    and edit the <p> caption line beneath it.
-    Because these are fixed, check them if you ever make a film
-    private or delete it — a removed film shows an error box.
+PAGE RHYTHM NOW
+  deep hero -> navy stats -> WHITE expertise -> cream welcome
+  -> navy explore -> deep featured
+  The white band is the lift the reference sites had.
 
-KEEPING BOTH LANGUAGES IN STEP
-  page.html = English   |   page-bn.html = বাংলা
-  When a FACT changes (phone number, chamber hours, a new award,
-  a new publication, a swapped film), change it in BOTH files.
-  Every editable block is marked  EDIT HERE  in both languages.
+AFTER UPLOADING, force a fresh load:
+  Desktop  Ctrl+Shift+R      Phone  private/incognito tab
+And switch OFF Chrome's "Desktop site" for your own site.
