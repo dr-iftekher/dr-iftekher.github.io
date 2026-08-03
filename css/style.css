@@ -363,46 +363,6 @@ footer ul a:hover{color:var(--gold-soft)}
 }
 
 /* ============================================================
-   HEADER PHOTO CONTROLS
-   Add these to a page's <header> tag to place a photograph well.
-
-   FOCAL POINT — which part of the photo stays visible when the
-   image is cropped to fill the header. Default is centre.
-     <header class="hero hero--page hero--about focus-right">
-
-   OVERLAY STRENGTH — how much dark veil sits over the photo so
-   the text stays readable. Default suits most photographs.
-     <header class="hero hero--page hero--about veil-strong">
-
-   The two can be combined:
-     <header class="hero hero--page hero--about focus-right veil-strong">
-   ============================================================ */
-.focus-left       {background-position:left center}
-.focus-right      {background-position:right center}
-.focus-top        {background-position:center top}
-.focus-bottom     {background-position:center bottom}
-.focus-top-left   {background-position:left top}
-.focus-top-right  {background-position:right top}
-
-.veil-strong::before{
-  background:linear-gradient(100deg, rgba(7,16,33,.97) 38%, rgba(7,16,33,.82) 74%, rgba(7,16,33,.68));
-}
-.veil-soft::before{
-  background:linear-gradient(100deg, rgba(7,16,33,.88) 30%, rgba(7,16,33,.52) 70%, rgba(7,16,33,.34));
-}
-
-/* On phones the header is narrow and text spans the full width,
-   so a top-to-bottom veil reads far better than a side one. */
-@media(max-width:700px){
-  .hero::before{
-    background:linear-gradient(180deg, rgba(7,16,33,.80), rgba(7,16,33,.90) 45%, rgba(7,16,33,.96));
-  }
-  .hero--home{min-height:auto;padding:70px 0 64px}
-  .hero--page{min-height:auto;padding:64px 0 52px}
-}
-
-
-/* ============================================================
    NAV CTA — DEFINITIVE FIX
    In the screenshot the button's label wrapped onto two lines
    ("BOOK" / "APPOINTMENT") and the red background broke across
@@ -589,3 +549,63 @@ footer ul a:hover{color:var(--gold-soft)}
 @media(max-width:860px){
   .portrait--arch{width:min(220px,54vw);margin-top:34px}
 }
+
+
+/* ============================================================
+   HERO ROLE LINES — three now stack (Assistant Professor,
+   Consultant, Fellowship Trainer). Tighter rhythm keeps the
+   badges and call-to-action buttons above the fold on phones.
+   ============================================================ */
+.hero-role{font-size:clamp(14.5px,1.75vw,17px);margin-bottom:3px;line-height:1.42}
+.hero-role:last-of-type{margin-bottom:0}
+.hero-role + .hero-role{margin-bottom:3px}
+.hero-role-bn{margin-top:10px}
+.hero-line{margin-top:22px}
+@media(max-width:700px){
+  .hero-role{font-size:14px;line-height:1.4}
+  .hero h1{font-size:clamp(30px,8vw,40px)}
+  .hero-line{margin-top:18px;margin-bottom:22px}
+  .badges{gap:8px;margin-bottom:26px}
+  .badge{font-size:11.5px;padding:6px 12px}
+}
+.bn-page .hero-role{line-height:1.62}
+
+
+/* ============================================================
+   HEADER PHOTO CONTROLS
+   Add to a page's <header> tag to place a photograph well.
+     <header class="hero hero--home focus-left">
+     <header class="hero hero--page hero--about focus-right veil-soft">
+   ============================================================ */
+.focus-left       {background-position:left center}
+.focus-right      {background-position:right center}
+.focus-top        {background-position:center top}
+.focus-bottom     {background-position:center bottom}
+.focus-top-left   {background-position:left top}
+.focus-top-right  {background-position:right top}
+
+
+/* ============================================================
+   ACCESSIBILITY — skip navigation link
+   Invisible until a keyboard user presses Tab, then appears so
+   they can jump past the menu straight to the content.
+   ============================================================ */
+.skip-link{
+  position:absolute;left:-9999px;top:0;z-index:200;
+  background:var(--gold);color:var(--navy-deep);
+  padding:12px 22px;font-weight:700;font-size:14px;
+  text-decoration:none;border-radius:0 0 5px 0;
+}
+.skip-link:focus{left:0}
+
+/* Custom 404 page */
+.error-page{
+  min-height:72vh;display:flex;align-items:center;
+  background:var(--navy-deep);color:var(--white);text-align:center;
+}
+.error-page .code{
+  font-family:var(--display);font-size:clamp(64px,14vw,120px);
+  color:var(--gold);line-height:1;font-weight:700;
+}
+.error-page h1{font-family:var(--display);font-size:clamp(24px,4vw,34px);margin:14px 0 12px}
+.error-page p{color:var(--muted-dark);max-width:520px;margin:0 auto 30px}
